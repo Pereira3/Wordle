@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.projeto.SignLogController">
+   <children>
+      <Button layoutX="396.0" layoutY="2.0" mnemonicParsing="false" onAction="#SignLog" onMouseClicked="#SignLog" style="-fx-text-fill: #2478E9; -fx-border-color: #2478E9; -fx-border-radius: 10; -fx-background-radius: 10;" text="?" />
+      <Label alignment="CENTER" layoutX="40.0" layoutY="-4.0" prefHeight="65.0" prefWidth="340.0" style="-fx-text-fill: #2478E9;" text="Como Jogar">
+         <font>
+            <Font size="36.0" />
+         </font></Label>
+      <Label alignment="CENTER" layoutX="7.0" layoutY="65.0" prefHeight="25.0" prefWidth="400.0" text="O Wordle consiste num jogo onde no fim de selecionado o Idioma e a Dificuld" textOverrun="CLIP" />
+      <Label alignment="CENTER" layoutX="7.0" layoutY="84.0" prefHeight="25.0" prefWidth="400.0" text="culdade, será apresentada a tela do jogo, onde terá N tentativas consuante" textOverrun="CLIP" />
+      <Label alignment="CENTER" layoutX="7.0" layoutY="103.0" prefHeight="25.0" prefWidth="400.0" text=" a Dificuldade que escolher." />
+      <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="14.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icon.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="170.0" layoutY="161.0" prefHeight="17.0" prefWidth="250.0" text="Após escrever e pressionar o botão:" />
+      <GridPane layoutX="195.0" layoutY="185.0" prefHeight="90.0" prefWidth="200.0" style="-fx-background-color: whitesmoke;">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="200.0" style="-fx-text-fill: #6aa84f;" text="Verde: Acertou a Letra e o Espaço" />
+            <Label alignment="CENTER" layoutX="10.0" layoutY="17.0" prefHeight="17.0" prefWidth="200.0" style="-fx-text-fill: #f1c232;" text="Amarelo: Acertou apenas a Letra" GridPane.rowIndex="1" />
+            <Label alignment="CENTER" layoutX="10.0" layoutY="47.0" prefHeight="17.0" prefWidth="200.0" style="-fx-text-fill: #999999;" text="Cinza: Letra Incorreta" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+   </children>
+</Pane>
